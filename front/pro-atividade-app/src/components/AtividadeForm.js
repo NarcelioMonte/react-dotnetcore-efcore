@@ -95,7 +95,7 @@ export default function AtividadeForm(props) {
               {
                 atividade.id === 0 ?
                 <button
-                    className='btn btn-outline-sucess me-2'
+                    className='btn btn-outline-success me-2'
                     type='submit'>
                     <i className='fas fa-plus me-2'></i>
                     Salvar
