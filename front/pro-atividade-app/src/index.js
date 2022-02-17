@@ -4,11 +4,17 @@ import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import reportWebVitals from './reportWebVitals';
+import Menu from './components/Menu';
+import 'bootswatch/dist/sketchy/bootstrap.min.css';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
-  <div className='container'>
-    <App />
-  </div>,
+  <Router>
+      <Menu />
+          <div className='container'>
+              <App />
+          </div>
+  </Router>,
   document.getElementById('root')
 );
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Atividade(props) {
+export default function AtividadeItem(props) {
     function prioridadeLabel(param) {
         switch(param) {
             case 'Baixa':
@@ -17,9 +17,9 @@ export default function Atividade(props) {
             case 'Baixa':
                 return icon ? 'smile' : 'success';
             case 'Normal':
-                return icon ? 'meh' : 'dark';
+                return icon ? 'meh' : 'warning';
             case 'Alta':
-                return icon ? 'frown' : 'warning';
+                return icon ? 'frown' : 'danger';
             default:
                 return 'Não Definida';
         }
